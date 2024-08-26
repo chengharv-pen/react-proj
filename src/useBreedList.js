@@ -2,7 +2,13 @@ import { useQuery } from "@tanstack/react-query";
 import fetchBreedList from "./fetchBreedList";
 
 export default function useBreedList(animal) {
+  // First parameter: query key
+  // Second parameter: function that fetches the data (in this case, breed), based on animal
   const results = useQuery(["breeds", animal], fetchBreedList);
+
+  // Here, optional chaining is used to safely access results.data.breeds
+  // If results.data or results.data.breeds is undefined, it defaults to an empty array []
+  // results.status: This is the status of the query (e.g., 'loading', 'error', 'success').
   return [results?.data?.breeds ?? [], results.status];
 }
 
