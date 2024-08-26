@@ -1,6 +1,6 @@
 import { expect, test } from "vitest";
 import { render } from "@testing-library/react";
-import Results from "../Results";
+import Results from "../other-components/Results";
 import { StaticRouter } from "react-router-dom/server";
 
 // sample

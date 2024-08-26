@@ -1,5 +1,6 @@
 import Pet from "./Pet";
 
+// This is a functional component
 const Results = ({ pets }) => {
   return (
     <div className="search">

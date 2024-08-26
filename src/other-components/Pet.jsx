@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+// This is a functional component
 const Pet = ({ name, animal, breed, images, location, id }) => {
   let hero = "http://pets-images.dev-apis.com/pets/none.jpg";
   if (images && images.length) {

@@ -1,5 +1,6 @@
 import { Component } from "react";
 
+// This is a class component
 class Carousel extends Component {
   state = {
     active: 0,

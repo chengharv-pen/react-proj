@@ -1,6 +1,6 @@
 import { expect, test } from "vitest";
 import { render } from "@testing-library/react";
-import Carousel from "../Carousel";
+import Carousel from "../other-components/Carousel";
 import { StaticRouter } from "react-router-dom/server"; // A browser router that can work in node.
 
 test("lets users click on thumbnails to make them the hero", async () => {

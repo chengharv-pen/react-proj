@@ -1,6 +1,6 @@
 import { expect, test } from "vitest";
 import { render } from "@testing-library/react";
-import Pet from "../Pet";
+import Pet from "../other-components/Pet";
 import { StaticRouter } from "react-router-dom/server"; // A browser router that can work in node.
 
 test("displays a default thumbnail", async () => {
